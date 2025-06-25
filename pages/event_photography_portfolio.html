@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotografia de Eventos - Maycon Rocha Photography</title>
+    <meta name="description" content="Portfólio de fotografia de eventos - festas, corporativo, aniversários e formaturas. Cobertura profissional de celebrações especiais." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmayconroc9765back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 nav-contextual bg-background/90 backdrop-blur-gallery border-b border-subtle">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <rect x="14" y="14" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <circle cx="20" cy="18" r="2" fill="currentColor"/>
+                        <path d="M12 28l4-4 4 4 8-8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                    </svg>
+                    <span class="font-playfair text-xl font-semibold text-primary">Maycon Rocha</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Início</a>
+                    <a href="private_photography_portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Privada</a>
+                    <a href="sports_photography_portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Esportiva</a>
+                    <a href="event_photography_portfolio.html" class="text-accent font-medium border-b-2 border-accent pb-1">Eventos</a>
+                    <a href="about_page.html" class="text-text-secondary hover:text-primary transition-colors">Sobre</a>
+                </div>
+
+                <!-- Contact Button & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <a href="contact_page.html" class="btn-primary px-6 py-2 rounded-lg font-medium touch-target">Contato</a>
+                    <button class="md:hidden p-2 touch-target" id="mobile-menu-btn">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-subtle" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Início</a>
+                    <a href="private_photography_portfolio.html" class="text-text-secondary">Fotografia Privada</a>
+                    <a href="sports_photography_portfolio.html" class="text-text-secondary">Fotografia Esportiva</a>
+                    <a href="event_photography_portfolio.html" class="text-accent font-medium">Eventos & Festas</a>
+                    <a href="about_page.html" class="text-text-secondary">Sobre Mim</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="bg-surface py-4">
+        <div class="container mx-auto px-6">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors">Início</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-text-secondary">Portfólio</span>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-accent font-medium">Fotografia de Eventos</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Header -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="font-playfair text-fluid-3xl font-bold text-primary mb-6">Fotografia de Eventos</h1>
+                <p class="text-fluid-lg text-text-secondary leading-relaxed mb-8">
+                    Capturamos a essência e emoção de suas celebrações especiais. De festas íntimas a grandes eventos corporativos, 
+                    documentamos cada momento importante com técnica profissional e sensibilidade artística.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-accent text-primary px-4 py-2 rounded-full text-sm font-medium">Festas</span>
+                    <span class="bg-secondary text-white px-4 py-2 rounded-full text-sm font-medium">Corporativo</span>
+                    <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Aniversários</span>
+                    <span class="bg-surface border border-subtle text-text-secondary px-4 py-2 rounded-full text-sm font-medium">Formaturas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="py-8 bg-surface border-b border-subtle">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active px-6 py-2 rounded-lg font-medium transition-colors touch-target" data-filter="all">
+                    Todos
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-lg font-medium transition-colors touch-target" data-filter="festas">
+                    Festas
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-lg font-medium transition-colors touch-target" data-filter="corporativo">
+                    Corporativo
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-lg font-medium transition-colors touch-target" data-filter="aniversarios">
+                    Aniversários
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-lg font-medium transition-colors touch-target" data-filter="formaturas">
+                    Formaturas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Photography Gallery -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="gallery-grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery">
+                <!-- Wedding Reception -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-photo" data-category="festas">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Recepção de Casamento" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Festas</span>
+                            <p class="text-sm">Dezembro 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Event -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-square" data-category="corporativo">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Evento Corporativo" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Corporativo</span>
+                            <p class="text-sm">Novembro 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Party -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-portrait" data-category="aniversarios">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Festa de Aniversário" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Aniversários</span>
+                            <p class="text-sm">Outubro 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduation Ceremony -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-photo" data-category="formaturas">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cerimônia de Formatura" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-surface border border-subtle text-text-secondary px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Formaturas</span>
+                            <p class="text-sm">Setembro 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding Dance -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-square" data-category="festas">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dança de Casamento" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Festas</span>
+                            <p class="text-sm">Agosto 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-photo" data-category="corporativo">
+                    <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Conferência Empresarial" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Corporativo</span>
+                            <p class="text-sm">Julho 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Children's Birthday -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-portrait" data-category="aniversarios">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aniversário Infantil" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Aniversários</span>
+                            <p class="text-sm">Junho 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University Graduation -->
+                <div class="gallery-item group relative overflow-hidden rounded-lg shadow-gallery-sm magnetic-hover aspect-square" data-category="formaturas">
+                    <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Formatura Universitária" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" loading="lazy" onclick="openLightbox(this)" onerror="this.src='https://images.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="bg-surface border border-subtle text-text-secondary px-3 py-1 rounded-full text-sm font-medium mb-2 block w-fit">Formaturas</span>
+                            <p class="text-sm">Maio 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-surface">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-fluid-2xl font-bold text-primary mb-4">Depoimentos de Eventos</h2>
+                <p class="text-fluid-base text-text-secondary max-w-2xl mx-auto">
+                    O que nossos clientes dizem sobre nossa cobertura de eventos
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-background rounded-xl p-6 shadow-gallery-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cliente Carla Mendes" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Carla Mendes</h4>
+                            <p class="text-sm text-text-secondary">Organizadora de Eventos</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic leading-relaxed">
+                        "Maycon capturou perfeitamente a energia e emoção do nosso evento corporativo. Profissional excepcional!"
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-background rounded-xl p-6 shadow-gallery-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cliente Roberto Silva" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/14/53/man-1845814_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Roberto Silva</h4>
+                            <p class="text-sm text-text-secondary">Pai da Formanda</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic leading-relaxed">
+                        "Momentos únicos da formatura da minha filha foram capturados com perfeição. Trabalho impecável!"
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-background rounded-xl p-6 shadow-gallery-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cliente Fernanda Costa" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Fernanda Costa</h4>
+                            <p class="text-sm text-text-secondary">Aniversariante</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic leading-relaxed">
+                        "Minha festa de 30 anos ficou eternizada nas lindas fotos do Maycon. Superou todas as expectativas!"
+                    </p>
+                    <div class="flex text-accent mt-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-playfair text-fluid-2xl font-bold mb-6">Precisa de Cobertura para Seu Evento?</h2>
+            <p class="text-fluid-lg mb-8 text-gray-200 max-w-2xl mx-auto">
+                Entre em contato conosco e solicite um orçamento personalizado para seu evento especial
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact_page.html" class="btn-primary px-8 py-3 rounded-lg font-medium text-lg touch-target">
+                    Solicitar Orçamento
+                </a>
+                <a href="homepage.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium text-lg hover:bg-white hover:text-primary transition-colors touch-target">
+                    Ver Outros Trabalhos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo & Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-10 h-10 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <rect x="14" y="14" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <circle cx="20" cy="18" r="2" fill="currentColor"/>
+                            <path d="M12 28l4-4 4 4 8-8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        <span class="font-playfair text-xl font-semibold text-primary">Maycon Rocha Photography</span>
+                    </div>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Fotógrafo profissional especializado em capturar momentos únicos e inesquecíveis. 
+                        Transformamos suas memórias em arte através da fotografia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-secondary hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-text-secondary hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z.017-.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-text-secondary hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors">Início</a></li>
+                        <li><a href="about_page.html" class="text-text-secondary hover:text-accent transition-colors">Sobre</a></li>
+                        <li><a href="private_photography_portfolio.html" class="text-text-secondary hover:text-accent transition-colors">Fotografia Privada</a></li>
+                        <li><a href="sports_photography_portfolio.html" class="text-text-secondary hover:text-accent transition-colors">Fotografia Esportiva</a></li>
+                        <li><a href="event_photography_portfolio.html" class="text-text-secondary hover:text-accent transition-colors">Eventos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-4">Contato</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            (54) 9135-7160
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            contato@mayconrocha.com
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Porto Alegre, RS - Brasil
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-subtle mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 Maycon Rocha Photography. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center">
+        <div class="relative max-w-4xl max-h-full p-4">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-accent transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="lightbox-image" src alt class="max-w-full max-h-full object-contain" />
+            <div class="absolute bottom-4 left-4 text-white">
+                <div class="flex items-center space-x-4">
+                    <button onclick="shareImage()" class="flex items-center space-x-2 bg-accent text-primary px-4 py-2 rounded-lg hover:bg-secondary transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                        </svg>
+                        <span>Compartilhar</span>
+                    </button>
+                    <a href="contact_page.html" class="flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Solicitar Orçamento</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-accent', 'text-primary');
+                    btn.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-accent', 'hover:text-primary');
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active', 'bg-accent', 'text-primary');
+                this.classList.remove('bg-surface', 'text-text-secondary', 'hover:bg-accent', 'hover:text-primary');
+
+                const filter = this.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('parallax-reveal');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functionality
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function shareImage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Maycon Rocha Photography',
+                    text: 'Confira este trabalho incrível de fotografia de eventos!',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copiado para a área de transferência!');
+                });
+            }
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.nav-contextual');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Parallax reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.parallax-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Touch gestures for mobile (basic swipe detection)
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - could implement next image functionality
+                    console.log('Swipe left detected');
+                } else {
+                    // Swipe right - could implement previous image functionality
+                    console.log('Swipe right detected');
+                }
+            }
+        }
+
+        // Initialize filter buttons styling
+        document.addEventListener('DOMContentLoaded', function() {
+            const activeButton = document.querySelector('.filter-btn.active');
+            if (activeButton) {
+                activeButton.classList.add('bg-accent', 'text-primary');
+                activeButton.classList.remove('bg-surface', 'text-text-secondary');
+            }
+
+            // Style non-active buttons
+            filterButtons.forEach(button => {
+                if (!button.classList.contains('active')) {
+                    button.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-accent', 'hover:text-primary');
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
